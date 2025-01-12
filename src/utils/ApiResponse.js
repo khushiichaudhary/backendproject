@@ -6,4 +6,4 @@ class ApiResponse{
         this.statusCode = this.statusCode
     }
 }
-//khushi chaudhary
+export {ApiResponse}
