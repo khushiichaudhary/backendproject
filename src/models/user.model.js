@@ -32,7 +32,8 @@ const userSchema = new Schema(
            required: true
         },
         coverImage:{
-            type: true,
+            type: String,
+            // required:false
         },
         watchHistory:[
             {
@@ -90,6 +91,6 @@ userSchema.methods.generateRefreshToken = function(){
 }
 
 
-export default User= mongoose.model("User",userSchema);
+export const User= mongoose.model("User",userSchema);
 
 //jwt bearer token hai jo usko bear karta hai usko bhej deta hai, 
